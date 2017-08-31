@@ -1,5 +1,7 @@
 # chanllenge
 
+cd into ./review and ./server, and run npm install / yarn install
+
 cd into /review, run yarn start
 cd into /server, run nodemon server.js --ignore db.json)  
 
