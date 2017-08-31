@@ -14,9 +14,9 @@ const Review = ({ id, score, comment, fromEmployee = {}, forEmployee = {} }) => 
     <Section1>{`from: ${fromEmployee.first}, ${fromEmployee.last} `}</Section1>
     <Section1>{`for: ${forEmployee.first}, ${forEmployee.last} `}</Section1>
 
-    <Section1> {score ? score : "Not Completed!"} </Section1>
+    <Section1> score: {score ? score : "Not Completed!"} </Section1>
     <Section2>
-      {comment ? comment : <Link to={`/new/${id}`}> Click here to complete review. </Link>}
+      comment: {comment ? comment : <Link to={`/new/${id}`}> Click here to complete review. </Link>}
     </Section2>
   </Wrapper>
 );
