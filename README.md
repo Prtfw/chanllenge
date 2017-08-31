@@ -10,7 +10,7 @@ cd into /server, run nodemon server.js --ignore db.json)
 to test, execute npm run test in /review
 
 
-
+start by going to http://localhost:3000/dashboard => request a reivew by searching / selecting employees => click on link to submit review requested (not styled) => refresh/update. 
 
 
 Assumptions:
@@ -80,7 +80,8 @@ click on link to complete assigned review => goes to /new/:id react route)
 (currently a admin can:
 go to ‘/dashboard’ to search/select employees to review each other and check the status of these reviews)
 Auth for admin and anonymous reviews if desired, or allow user to see only their reviews
-
+Add more tests (currently has examples of snapshot and render tests)
+better error handling (messaging) on server
 
 Refactor Possibilities:
 implement redux for state management
