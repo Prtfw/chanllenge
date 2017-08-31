@@ -33,8 +33,7 @@ class ReviewForm extends React.Component {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ ...this.state, id: this.props.match.params.id }),
-    });
-    this.props.history.push("/");
+    }).then(res => this.props.history.push("/"))
   };
   render() {
     return (

@@ -40,6 +40,7 @@ app.post('/submitReview/:id', function (req, res) {
   toUpdate.comment = req.body.comment
   db.reviews.update(toUpdate)
   db.db.saveDatabase();
+  res.send('ok')
 })
 
 app.get('/', function (req, res) {
